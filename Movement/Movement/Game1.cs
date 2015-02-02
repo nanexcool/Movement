@@ -121,9 +121,9 @@ namespace Movement
 
             spriteBatch.Begin();
 
-            spriteBatch.DrawString(font, player.Position.ToString(), new Vector2(0, 0), Color.Black);
-            spriteBatch.DrawString(font, player.Velocity.ToString(), new Vector2(0, 20), Color.Black);
-            spriteBatch.DrawString(font, player.Acceleration.ToString(), new Vector2(0, 40), Color.Black);
+            spriteBatch.DrawString(font, player.Position.ToString(), new Vector2(0, 0), Color.Red);
+            spriteBatch.DrawString(font, player.Velocity.ToString(), new Vector2(0, 20), Color.Red);
+            spriteBatch.DrawString(font, player.Acceleration.ToString(), new Vector2(0, 40), Color.Red);
 
             spriteBatch.End();
 
