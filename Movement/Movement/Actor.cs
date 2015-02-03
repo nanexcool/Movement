@@ -27,9 +27,14 @@ namespace Movement
 
         private void GravitationalMovement(float elapsed)
         {
-            Vector2 speed = new Vector2(1000, 0);
+            Vector2 speed = new Vector2(1500, 0);
 
             Acceleration = wantedPosition * speed;
+
+            if (jumping)
+            {
+                Acceleration.X = 0;
+            }
 
             friction = -6.0f;
 

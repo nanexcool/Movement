@@ -31,7 +31,7 @@ namespace Movement
             if (!jumping)
             {
                 jumping = true;
-                Velocity.Y = -1000;
+                Velocity.Y = -800;
             }
         }
 
